@@ -1,0 +1,43 @@
+<!doctype html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="lib/bs4.css">
+    <style>body { background: url(lib/bg.png) repeat; }</style>
+  </head>
+
+  <body>
+    <main>
+      <div class="d-print-none container-fluid py-2 bg-danger text-light">
+	<div class="row"><div class="col-12">
+	    <h3 class="font-weight-normal my-0 py-0">CSE Rotation Match</h3>
+	    <p class="my-0 py-0">Washington University in St. Louis</p>
+	  </div></div>
+      </div>
+
+      <div class="container mt-5" id="logindiv">
+	<div class="row mx-0 mx-sm-5">
+	  <div class="col-12 pt-5 pb-4 px-sm-5 px-1 bg-white border text-center rounded">
+	    <div class="row mx-0">
+	      <div class="col-12 mx-0 px-0 px-sm-3"><input class="form-control" placeholder="Enter root password here" type="password" id="pswd"></div>
+	    </div>
+	    <a class="btn btn-primary mt-4 px-5" href="javascript:void(0);" onclick="login();">Reset Admin Password</a>
+	  </div>
+	</div>
+      </div>
+
+      <div class="container mt-5 d-none" id="maindiv">
+	  <div class="row mx-0 mx-sm-5">
+	      <div class="col-12 pt-5 pb-3 px-sm-5 px-1 bg-white border text-center rounded">
+		  New Admin Password: <div class="d-inline-block ml-2 w-50"><input class="form-control" id="apass" readonly value=""></div>
+
+		  <p class="mt-5 text-secondary">Make a note of this password, and share with people who need administrator access.</p>
+	  </div>
+	</div>
+      </div>
+      
+    </main>
+    <script src="lib/jq.js"></script><script src="js/server.js"></script><script src="js/sudo.js"></script>
+  </body>
+</html>

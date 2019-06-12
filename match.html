@@ -1,0 +1,46 @@
+<!doctype html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="lib/bs4.css"><link rel="stylesheet" href="lib/jex.css"><link rel="stylesheet" href="lib/jd.css">
+    <style>body { background: url(lib/bg.png) repeat; }</style>
+  </head>
+
+  <body>
+    <main>
+      <div class="d-print-none container-fluid py-2 bg-danger text-light">
+	<div class="row"><div class="col-12">
+	    <h3 class="font-weight-normal my-0 py-0">CSE Rotation Match</h3>
+	    <p class="my-0 py-0">Washington University in St. Louis</p>
+	  </div></div>
+      </div>
+
+      <div class="container mt-5" id="logindiv">
+	<div class="row mx-0 mx-sm-5">
+	  <div class="col-12 pt-5 pb-4 px-sm-5 px-1 bg-white text-center rounded border">
+	    <div class="row mx-0 text-center">
+	      
+	      <div class="col-12 px-3">
+		<input class="form-control" placeholder="Enter the admin password here" type="password" id="pswd">
+		<p><a class="btn btn-primary mt-4 px-5" href="javascript:void(0);" onclick="login();">Start</a></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      
+      <div class="container-fluid my-5 px-0 px-lg-5 text-center d-none" id="maindiv">
+	<div class="row d-flex justify-content-center mx-lg-3"><div class="col-12 col-print-12 bg-white rounded border py-3 px-1">
+	    <a href="javascript:void(0);" class="btn btn-lg btn-warning mt-3 mb-5" onclick="update();">Save to Server</a>
+
+	    <div class="w-100"  style="overflow-x: auto;">
+	      <div id="fsheet" class="small mt-2 mx-auto" style="padding-bottom: 15em;"></div>
+	    </div>
+	</div></div>
+      </div>
+    </main>
+    <script src="lib/jq.js"></script><script src="lib/jex.js"></script><script src="lib/jd.js"></script>
+    <script src="js/server.js"></script><script src="js/match.js"></script>
+  </body>
+</html>

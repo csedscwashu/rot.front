@@ -1,0 +1,66 @@
+<!doctype html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="lib/bs4.css"><link rel="stylesheet" href="lib/ldng.css">
+    <style>
+     .cimg { width: 15rem; height: 12.5rem; background-size: cover; background-repeat: no-repeat; background-position: top center;}
+     .card {overflow-x: hidden; width: 15rem; border-radius: 15px; cursor: pointer;}
+     .card-body {height: 7rem; overflow-y: hidden;}
+     @media (min-width: 568px) { .modal-xl { width: 95%; max-width:600px; }}
+     body { background: url(lib/bg.png) repeat; }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="fixed-top container-fluid py-2 bg-danger text-light">
+	<div class="row">
+	  <div class="col-12 col-sm-6">
+	    <h3 class="font-weight-normal my-0 py-0">CSE Rotation Match</h3>
+	    <p class="my-0 py-0">Washington University in St. Louis</p>
+	  </div>
+	  <div class="col-12 col-sm-6 pt-sm-3">
+	    <select id="areasel" class="form-control" onchange="loadArea();"></select>
+	  </div>
+	</div>
+      </div>
+
+      <div class="container-fluid px-md-5" id="maindiv" style="margin-top: 6em;">
+	<div class="row px-md-4 px-lg-3"><div class="col-12">
+	  <div id="loading" class="text-center"><div class="lds-ripple"><div></div><div></div></div></div>
+	  <div class="row d-flex py-3 px-3 px-lg-5 justify-content-center" id="theList">
+	  </div></div>
+	</div>
+	
+	<div id="facdet" class="modal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-dialog-centered  modal-xl" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<h3 class="modal-title text-secondary"><span class="mr-3"  id='dname'>NAME</span><a class="btn btn-outline-danger mb-1" href="#" id="durl" target="_blank">Lab Website</a></h3>
+		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body" style="height: 50vh; overflow-y: auto;">
+		<p class="lead" id='dfocus'>dfocus</p>
+		<p><b>Research Description:</b> <span id='ddesc'>ddesc</span></p>
+		<p><b>Required Skills:</b> <span id="dpreq"></span></p>
+		<p><b>Looking to Recruit:</b> <span id="drecr"></span> student(s)</p>
+		<p>
+		  <b>Rotations (this cycle):</b> <span id="dcntr"></span> student(s)<br />
+		  <b>Already Matched:</b> <span id="dcntm"></span> student(s)<br />
+		</p>
+	      </div>
+	      <div class="modal-footer">
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </main>
+    
+    <script src="lib/jq.js"></script><script src="lib/bs.js"></script>
+    <script src="js/server.js"></script><script src="js/index.js"></script>
+  </body>
+</html>

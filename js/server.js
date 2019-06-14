@@ -1,1 +1,1 @@
-var server="https://o8djgfvej7.execute-api.us-east-1.amazonaws.com/prod/";
+var server="https://mpwqs7d8q7.execute-api.us-east-1.amazonaws.com/prod/";

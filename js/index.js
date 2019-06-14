@@ -41,7 +41,10 @@ render = function (resp) {
 	try {
 	    rlist[i].r = rmcount[rlist[i].name].r;
 	    rlist[i].m = rmcount[rlist[i].name].m;
-	} catch(e) { }
+	} catch(e) {
+	    rlist[i].r = 0;
+	    rlist[i].m = 0;
+	}
 	
 	slist.push(rlist[i]);
 	for(let j = 0; j < rlist[i].rarea.length; j++) areas[rlist[i].rarea[j]] = '';

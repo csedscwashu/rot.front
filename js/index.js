@@ -34,7 +34,7 @@ render = function (resp) {
     
     areas = {}; slist = [];
     for(let i = 0; i < rlist.length; i++) {
-	if(rlist[i].rexp == 0 && rlist[i].rcons == 0)
+	if(rlist[i].rexp == 0 && rlist[i].ropt == 0)
 	    continue;
 	rlist[i].idx = Math.random();
 

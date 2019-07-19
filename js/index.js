@@ -72,7 +72,7 @@ render = function (resp) {
 `;
     html = "";
     for(let i = 0; i < slist.length; i++) {
-	slist[i].img = slist[i].img.replace('+','%20');
+	slist[i].img = slist[i].img.replace(/\+/g,'%20');
 	data = {'NAME': slist[i].name, 'IMG': slist[i].img, 'FOCUS': slist[i].rfocus, 'ARCLASS': [], 'EXP': slist[i].rexp};
 	for(let j = 0; j < areas.length; j++)
 	    if(slist[i].rarea.includes(areas[j]))

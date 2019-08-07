@@ -17,6 +17,7 @@ fullShow = function (name) {
     $('#drecr').html(rcr); $('#dcntr').html(fac.r); $('#dcntm').html(fac.m);
     
     $('#facdet').modal('show');
+    $('.modal-body').scrollTop(0);
 }
 
 loadArea = function() {
